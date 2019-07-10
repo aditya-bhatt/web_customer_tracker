@@ -30,7 +30,7 @@
 	</beans:bean>
 
 	<context:component-scan
-		base-package="com.aditya.web_student_tracker" />
+		base-package="com.aditya.web_customer_tracker" />
 
 	<!-- Step 1: Define Database DataSource / connection pool -->
 	<beans:bean id="myDataSource"
@@ -53,7 +53,7 @@
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<beans:property name="dataSource" ref="myDataSource" />
 		<beans:property name="packagesToScan"
-			value="com.aditya.web_student_tracker.entity" />
+			value="com.aditya.web_customer_tracker.entity" />
 		<beans:property name="hibernateProperties">
 			<beans:props>
 				<beans:prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</beans:prop>
