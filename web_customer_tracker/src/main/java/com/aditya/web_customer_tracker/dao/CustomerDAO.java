@@ -1,10 +1,10 @@
-package com.aditya.web_customer_tracker.service;
+package com.aditya.web_customer_tracker.dao;
 
 import java.util.List;
 
 import com.aditya.web_customer_tracker.entity.Customer;
 
-public interface CustomerService {
+public interface CustomerDAO {
 
 	public List<Customer> getCustomers();
 
@@ -12,6 +12,6 @@ public interface CustomerService {
 
 	public Customer getCustomer(int customerId);
 
-	public void deleteCustomer(Customer customer);
+	public void delete(Customer customer);
 
 }
